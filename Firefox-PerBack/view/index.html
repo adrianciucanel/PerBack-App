@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Map Me</title> 
+	<link rel="stylesheet" href="/css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="/css/app.css" />
+
+	<script src="/js/jquery-1.7.1.min.js"></script>
+	<script src="/js/jquery.mobile-1.4.5.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+	<script src="/js/info-service.js"></script>	
+	<script src="/js/routes-service.js"></script>	
+	<script src="/js/map-service.js"></script>	
+	<script src="/js/app.js"></script>
+</head> 
+	
+<body> 
+
+<!-- Start of first page: #home -->
+<div data-role="page" id="home">
+
+	<div data-role="header" data-position="fixed">
+	    <h3>Map Me</h3>  
+	</div><!-- /header -->
+
+	<div data-role="content">
+        <a href="#" id="btnLocateMe" data-role="button">LocateMe</a>
+		<div id="instruction">Click on the LocateMe button to retrieve the GPS Location and plot it on Google Map</div>
+		<div id="map-canvas"></div>
+	</div><!-- /content -->
+
+</div><!-- /page home -->
+
+<!-- Start of the second page that shows the map #map-page -->
+ <div data-role="page" id="map-page" >
+
+  <div data-role="header" >
+    <!-- <h1>Map</h1> -->
+    <div  data-role="controlgroup" data-type="horizontal">
+	 <a href="#" data-role="button" id="start" data-icon="location">Start</a>
+      <a href="#" data-role="button" id="navigation" data-icon="navigation">Trip</a>
+      <a href="#" data-role="button" id="help" data-icon="plus">Help</a>
+      <a href="#" data-role="button" id="hotel" data-icon="home">Hotel</a>
+  	</div>
+  </div>
+
+<div id="content">
+
+
+</div>
+
+</div> <!-- /page map-page -->
+
+</body>
+</html>

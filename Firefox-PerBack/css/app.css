@@ -1,0 +1,11 @@
+
+/*info images on the map*/
+.directions-button{
+	background-image:  url(/images/directions.jpg);
+    background-size:   cover;                     
+    background-repeat: no-repeat;
+    background-position: center center;   
+	min-height: 40px;
+	min-width: 40px;
+	float: right;
+}
